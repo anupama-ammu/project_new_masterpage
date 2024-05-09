@@ -30,7 +30,19 @@ namespace project_new_masterpage
         {
             int id = Convert.ToInt32(e.CommandArgument);
             Session["id"] = id;
-            Response.Redirect("Product_form.aspx");
+            Response.Redirect("view_product.aspx");
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string ins = "insert into Fb_table values(" + Session["user_id"] + ",'" + TextBox1.Text + "','  waiting  ','  pending  ')";
+            int r = ob.Fn_NonqQuery(ins);
+            if (r == 1)
+            {
+                Label4.Visible = true;
+                Label4.Text = "success";
+
+            }
         }
     }
 }

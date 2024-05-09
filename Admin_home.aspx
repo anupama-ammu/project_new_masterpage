@@ -14,7 +14,9 @@
             <td style="height: 27px">
                 <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/Edit_product.aspx">Update product</asp:LinkButton>
             </td>
-            <td style="height: 27px"></td>
+            <td style="height: 27px">
+                <asp:LinkButton ID="LinkButton5" runat="server" PostBackUrl="~/view_feedback.aspx">feedback</asp:LinkButton>
+            </td>
             <td style="height: 27px"></td>
             <td style="height: 27px"></td>
         </tr>

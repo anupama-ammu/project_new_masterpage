@@ -46,8 +46,12 @@ namespace project_new_masterpage
             int i = ob.Fn_NonqQuery(ins);
             if (i != 0)
             {
-                string inslog = "insert into Login_table values('"+TextBox1+"','"+TextBox2+ "','user','active'," + Reg_id + ")";
-                Label10.Text = "inserted";
+                string inslog = "insert into Login_table values(" + Reg_id + ",'" + TextBox9.Text+"','"+TextBox10.Text+ "','user','active')";
+                int j = ob.Fn_NonqQuery(inslog) ;
+                if (j != 0)
+                {
+                    Label10.Text = "inserted";
+                }
             }
 
         }

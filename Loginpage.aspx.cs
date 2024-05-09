@@ -32,11 +32,14 @@ namespace project_new_masterpage
                 if (Logintype == "admin")
                 {
                     Label4.Text = "Admin";
-                    
+                    Response.Redirect("Admin_home.aspx");
+
+
                 }
                 else if (Logintype == "user")
                 {
                     Label4.Text = "User";
+                    Response.Redirect("User_home.aspx");
                 }
             }
 

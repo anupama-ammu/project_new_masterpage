@@ -1,78 +1,122 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Product_view.aspx.cs" Inherits="project_new_masterpage.Product_view1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="viewbill.aspx.cs" Inherits="project_new_masterpage.viewbill" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table class="w-100">
         <tr>
-            <td style="width: 322px; height: 55px">
-                &nbsp;</td>
-            <td style="height: 55px">
-                &nbsp;</td>
-            <td style="height: 55px">
-                <asp:Label ID="Label1" runat="server" Text="Name"></asp:Label>
-                :&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label2" runat="server" Font-Bold="True" ForeColor="Black" Text="[Label1]"></asp:Label>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Label ID="Label1" runat="server" Text="Bill NO:"></asp:Label>
+                <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
             </td>
-            <td style="height: 55px">&nbsp;</td>
-            <td style="height: 55px"></td>
-            <td style="height: 55px"></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 322px">
-                <asp:ImageButton ID="ImageButton1" runat="server" Height="500px" Width="429px" />
+            <td>
+                <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
             </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
             <td>
-                &nbsp;</td>
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
+                    <Columns>
+                        <asp:BoundField DataField="Quantity" HeaderText="Quantity" />
+                        <asp:BoundField DataField="Product_price" HeaderText="Rate" />
+                        <asp:BoundField DataField="Price" HeaderText="Amount" />
+                        <asp:BoundField DataField="Product_name" HeaderText="product_name" />
+                    </Columns>
+                </asp:GridView>
+            </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
             <td>
-                &nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="width: 322px">&nbsp;</td>
-            <td>&nbsp;</td>
+                <asp:Label ID="Label4" runat="server" Text="Account no:"></asp:Label>
+                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 322px">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
             <td>
-                &nbsp;</td>
+                <asp:Label ID="Label5" runat="server" Text="Grand Total:"></asp:Label>
+                <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
+            </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
             <td>
-                &nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="width: 322px">&nbsp;</td>
-            <td>&nbsp;</td>
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="PAY" />
+            </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 322px">&nbsp;</td>
             <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="width: 322px">&nbsp;</td>
-            <td>&nbsp;</td>
+                <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
+            </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 322px">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -80,17 +124,6 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 322px">&nbsp;</td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="width: 322px">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -98,7 +131,6 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 322px">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -106,7 +138,6 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 322px">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -114,7 +145,6 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 322px">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -122,7 +152,6 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 322px">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -130,7 +159,6 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 322px">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -138,7 +166,6 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 322px">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -146,7 +173,6 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 322px">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -154,7 +180,6 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 322px">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -162,7 +187,6 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 322px">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -170,7 +194,6 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 322px">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -178,7 +201,6 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 322px">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -186,7 +208,6 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 322px">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -194,7 +215,6 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 322px">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -202,7 +222,6 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 322px">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -210,47 +229,6 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 322px">&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="width: 322px">&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="width: 322px">&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="width: 322px">&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="width: 322px">&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="width: 322px">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>

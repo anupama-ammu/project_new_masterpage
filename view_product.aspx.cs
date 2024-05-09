@@ -33,7 +33,7 @@ namespace project_new_masterpage
         {
             int id = Convert.ToInt32(e.CommandArgument);
             Session["pid"] = id;
-            Response.Redirect("Product_view.aspx");
+            Response.Redirect("view_single_page.aspx");
         }
     }
 }
